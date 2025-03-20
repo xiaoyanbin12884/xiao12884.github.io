@@ -1,29 +1,29 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-    <section id="survey">
-        <h2>申请表</h2>
-        <form>
-          <label for="name">姓名:</label>
-          <input type="text" id="name" placeholder="请输入姓名">
-          <label for="position">感兴趣的职位：</label><br>
-          <input type="radio" id="webDesign" name="position" value="Web设计人员">
-          <label for="webDesign">Web设计人员</label>
-          <input type="radio" id="webManager" name="position" value="Web管理人员">
-          <label for="webManager">Web管理人员</label>
-          <input type="radio" id="webDeveloper" name="position" value="Web开发人员">
-          <label for="webDeveloper">Web开发人员</label><br>
-          <label for="requirements">其他要求：</label><br>
-          <textarea id="requirements" placeholder="包括薪水待遇、工作地点等。"></textarea>
-          <input type="checkbox" id="confirm" checked>
-          <label for="confirm">发送确认消息</label><br>
-          <label for="experience">经验</label>
-          <select id="experience">
-            <option value="无经验">无经验</option>
-            <option value="1-2年">1-2年</option>
-            <option value="3-5年">3-5年</option>
-          </select><br>
-          <input type="submit" value="确定">
-          <input type="reset" value="重置">
-        </form>
-      </section>
-    
+     <script>
+    function showDialog() {
+      alert("这是一个对话框！");
+    }
+
+    function changeBackgroundColor() {
+      document.body.style.backgroundColor = getRandomColor();
+    }
+
+    function getRandomColor() {
+      const letters = '0123456789ABCDEF';
+      let color = '#';
+      for (let i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+      }
+      return color;
+    }
+
+    function showCurrentTime() {
+      const now = new Date();
+      const time = now.toLocaleTimeString();
+      document.getElementById('time').innerHTML = `当前时间：${time}`;
+    }
+  </script>
+</body>
+
+</html>
