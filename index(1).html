@@ -1,29 +1,11 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-     <script>
-    function showDialog() {
-      alert("这是一个对话框！");
-    }
-
-    function changeBackgroundColor() {
-      document.body.style.backgroundColor = getRandomColor();
-    }
-
-    function getRandomColor() {
-      const letters = '0123456789ABCDEF';
-      let color = '#';
-      for (let i = 0; i < 6; i++) {
-        color += letters[Math.floor(Math.random() * 16)];
-      }
-      return color;
-    }
-
-    function showCurrentTime() {
-      const now = new Date();
-      const time = now.toLocaleTimeString();
-      document.getElementById('time').innerHTML = `当前时间：${time}`;
-    }
-  </script>
+     <body>
+  <!-- 主页头部 -->
+  <header>
+    <img src="your_avatar.jpg" alt="头像">
+    <h1>你的个人身份</h1>
+  </header>
 </body>
 
 </html>
